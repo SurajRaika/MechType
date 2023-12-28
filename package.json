@@ -1,0 +1,25 @@
+{
+  "name": "mechtype",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+     "@geist-ui/core": "^2.3.8",
+      "@geist-ui/icons": "^1.0.2",
+    "preact": "^10.16.0",
+    "@tauri-apps/api": "^1.5.2",
+     "preact-material-components": "^1.6.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.5.0",
+    "typescript": "^5.0.2",
+    "vite": "^5.0.0",
+    "@tauri-apps/cli": "^1.5.8"
+  }
+}
