@@ -11,7 +11,7 @@
   },
   "tauri": {
     "allowlist": {
-    
+
       "dialog": {
         "open":true
       },
@@ -36,10 +36,15 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "resources":[
-        "soundPack/super_paper_mario_v1/"
-      ]
-
+      "resources": [
+    "soundPack/cherrymx-black-abs/",
+    "soundPack/cherrymx-brown-abs/",
+    "soundPack/cherrymx-brown-pbt/",
+    "soundPack/cherrymx-red-abs/",
+    "soundPack/nk-cream/",
+    "soundPack/opera-gx-typing-sounds/",
+    "soundPack/super_paper_mario_v1/"
+  ]
     },
     "security": {
       "csp": null

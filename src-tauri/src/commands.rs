@@ -80,7 +80,7 @@ pub async fn add_track() -> Result<String, String> {
 fn check_path(file_path: String) -> ApiResponse {
     if is_dir(file_path.clone()).expect("Error in checking dir") {
         let mut has_config_file = false;
-        let mut has_wav_music_file = false;
+        let mut has_wav_music_file = true;
         for file in read_dir(file_path.clone(), false).expect("Error_in_reading dir content") {
             if file.name.clone().unwrap().contains("config.json") {
                 has_config_file = true;
