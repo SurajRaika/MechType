@@ -36,15 +36,16 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "resources": [
-    "soundPack/cherrymx-black-abs/",
-    "soundPack/cherrymx-brown-abs/",
-    "soundPack/cherrymx-brown-pbt/",
-    "soundPack/cherrymx-red-abs/",
+
+"resources": [
     "soundPack/nk-cream/",
     "soundPack/opera-gx-typing-sounds/",
-    "soundPack/super_paper_mario_v1/"
-  ]
+    "soundPack/super_paper_mario_v1/",
+    "soundPack/banana+split+lubed/",
+    "soundPack/banana+split+stock/",
+    "soundPack/steelseries apex pro tkl (1)/"
+]
+
     },
     "security": {
       "csp": null
