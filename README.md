@@ -34,7 +34,11 @@ To get started with MechType, download the latest version from the [Releases](ht
 
 ## Adding More Soundtracks
 
-Explore additional soundtracks at [MechVibes](https://mechvibes.com/sound-packs/) and enrich your typing experience.
+Explore additional soundtracks at
+
+Soundpacks: [Here](https://docs.google.com/spreadsheets/d/1PimUN_Qn3CWqfn-93YdVW8OWy8nzpz3w3me41S8S494/edit#gid=0)
+or
+ [MechVibes](https://mechvibes.com/sound-packs/) and enrich your typing experience.
 
 ## MechVibes
 
