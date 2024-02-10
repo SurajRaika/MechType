@@ -1,6 +1,6 @@
 {
   "build": {
-    "beforeDevCommand": "yarn dev",
+    "beforeDevCommand": "npm run dev",
     "beforeBuildCommand": "yarn build",
     "devPath": "http://localhost:1420",
     "distDir": "../dist"
@@ -15,10 +15,15 @@
       "dialog": {
         "open":true
       },
+      "shell": {
+        "open": true
+      },
       "fs": {
         "readFile": true,
         "writeFile": true,
         "readDir": true,
+        "createDir": true,
+        
         "scope": [
           "$APPDATA/*","$APPDATA",
           "$APPDATA/**",

@@ -1,5 +1,5 @@
 import { invoke } from "@tauri-apps/api/tauri";
-import { BaseDirectory, writeTextFile, readDir, readTextFile } from '@tauri-apps/api/fs';
+import { BaseDirectory, writeTextFile, readDir, readTextFile,createDir } from '@tauri-apps/api/fs';
 
 
 
@@ -52,6 +52,7 @@ export async function intialising_sound_track_data() {
         let tr: Track_data = { name: track.name!, path: track.path! };
         json.push(tr);
     });
+    await createDir('users', { dir: BaseDirectory.AppData, recursive: true });
 
     return await writeTextFile('app_data.json', JSON.stringify(json), { dir: BaseDirectory.AppData });
 

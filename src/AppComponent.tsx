@@ -8,6 +8,7 @@ import "./App.css";
 import { Github, Power,  Search } from '@geist-ui/icons'
 
 import 'preact-material-components/Slider/style.css';
+import { open } from '@tauri-apps/api/shell';
 
 import FolderSelectionButton from "./components/FolderSelectionButton";
 import TrackController from "./components/TrackController";
@@ -34,6 +35,9 @@ export default function AppComponent() {
         
         setIsVisible(!isVisible);
       };
+      const openGithub=()=>{
+        open("https://github.com/SurajRaika/MechType/");
+      }
       
 
 
@@ -43,8 +47,8 @@ export default function AppComponent() {
             <header >
                 <Button iconRight={<Search/>} auto scale={2 / 3}  onClick={toggleVisibility} />
                 <div class="header-menu-right-side" >
-                    <Button iconRight={<Github />} auto scale={2 / 3} px={0.6} />
-                    <Button style="  " iconRight={<Power />} auto scale={2 / 3} px={0.6} />
+                    <Button  onClick={openGithub} iconRight={<Github />} auto scale={2 / 3} px={0.6} />
+                    {/* <Button style="  " iconRight={<Power />} auto scale={2 / 3} px={0.6} /> */}
                 </div>
             {isVisible &&  <SearchTrackBar isVisible={isVisible} toggleVisibility={toggleVisibility}  ></SearchTrackBar>}
             </header>

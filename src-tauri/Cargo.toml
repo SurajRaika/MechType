@@ -1,9 +1,9 @@
 
 
 [package]
-name = "mechtunes"
+name = "MechType"
 version = "0.0.0"
-description = "A Tauri App"
+description = "Makes mechanical keyboard sound effects on every key press"
 authors = ["you"]
 license = ""
 repository = ""
@@ -15,7 +15,7 @@ edition = "2021"
 tauri-build = { version = "1.5", features = [] }
 
 [dependencies]
-tauri = { version = "1.5", features = [ "fs-read-dir", "dialog-open", "fs-write-file", "fs-read-file"] }
+tauri = { version = "1.5", features = [ "shell-open", "fs-create-dir", "fs-read-dir", "dialog-open", "fs-write-file", "fs-read-file"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 
