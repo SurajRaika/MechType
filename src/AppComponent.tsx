@@ -56,7 +56,7 @@ export default function AppComponent() {
 
             <div id="main-wrapper"  >
                 <div id="mackTunes-box" >
-                    <text id="mackTunes-text">MackTunes</text>
+                    <text id="mackTunes-text">MechType</text>
                 </div>
             </div>
 

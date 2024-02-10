@@ -3,6 +3,23 @@
 version = 3
 
 [[package]]
+name = "MechType"
+version = "0.0.0"
+dependencies = [
+ "flume",
+ "libc",
+ "once_cell",
+ "rdev",
+ "rodio_wav_fix",
+ "serde",
+ "serde_json",
+ "tauri",
+ "tauri-build",
+ "thread-priority",
+ "tokio",
+]
+
+[[package]]
 name = "addr2line"
 version = "0.21.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1799,23 +1816,6 @@ name = "matches"
 version = "0.1.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2532096657941c2fea9c289d370a250971c689d4f143798ff67113ec042024a5"
-
-[[package]]
-name = "mechtunes"
-version = "0.0.0"
-dependencies = [
- "flume",
- "libc",
- "once_cell",
- "rdev",
- "rodio_wav_fix",
- "serde",
- "serde_json",
- "tauri",
- "tauri-build",
- "thread-priority",
- "tokio",
-]
 
 [[package]]
 name = "memchr"
