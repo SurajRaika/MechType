@@ -14,7 +14,7 @@ MechType currently supports soundtracks in the WAV file format.
 
 MechType is developed using Rust and Tauri, ensuring superior efficiency compared to Electron-based applications.
 
-![MechType Screenshot](https://github.com/SurajRaika/MechType/assets/103476230/f0a868f7-857e-43f4-b329-9efccc595443)
+![MechType Screenshot](https://github.com/SurajRaika/MechType/assets/103476230/ea4686e3-ba9c-4851-be12-5bd69b8a72e9)
 
 ## Acknowledgments
 
@@ -26,9 +26,9 @@ To get started with MechType, download the latest version from the [Releases](ht
 
 - [Download MechType v0.0.1 for Linux](https://github.com/SurajRaika/MechType/releases/download/app-v0.0.1/mech-type_0.0.1_amd64.AppImage) (82.5 MB)
 - [Download MechType v0.0.1 for Debian](https://github.com/SurajRaika/MechType/releases/download/app-v0.0.1/mech-type_0.0.1_amd64.deb) (16.7 MB)
-- [Download MechType v0.0.1 for Windows](https://github.com/SurajRaika/MechType/releases/download/app-v0.0.1/MechType_0.0.1_x64-setup.exe) (11.2 MB)
+
 - [Download MechType v0.0.1 for macOS](https://github.com/SurajRaika/MechType/releases/download/app-v0.0.1/MechType_0.0.1_x64.dmg) (15.2 MB)
-- [Download MechType v0.0.1 Installer for Windows](https://github.com/SurajRaika/MechType/releases/download/app-v0.0.1/MechType_0.0.1_x64_en-US.msi) (15.7 MB)
+
 - [Download MechType v0.0.1 Source Code (ZIP)](https://github.com/SurajRaika/MechType/archive/refs/tags/app-v0.0.1.zip)
 - [Download MechType v0.0.1 Source Code (TAR.GZ)](https://github.com/SurajRaika/MechType/archive/refs/tags/app-v0.0.1.tar.gz)
 
