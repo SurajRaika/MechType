@@ -5,7 +5,7 @@ import "./styles.css";
 import "./App.css";
 
 
-import { Github, Power,  Search } from '@geist-ui/icons'
+import { Github,  Search } from '@geist-ui/icons'
 
 import 'preact-material-components/Slider/style.css';
 import { open } from '@tauri-apps/api/shell';
