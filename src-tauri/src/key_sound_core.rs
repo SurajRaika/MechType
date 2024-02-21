@@ -18,14 +18,22 @@ pub mod rustyvibes {
         Ok(obj)
     }
 
+
     pub struct JSONFile {
         pub value: Option<serde_json::Map<std::string::String, serde_json::Value>>,
         pub vol: Option<u16>,
     }
 
+
+
     impl JSONFile {
         pub fn initialize(&mut self, directory: String) {
+             // println!("{}",directory);
+                        // let without_prefix = resource_path.strip_prefix("\\\\?\\C:").unwrap_or(&resource_path);
+
             let soundpack_config = &format!("{}/config.json", directory)[..];
+
+             // println!("{}",soundpack_config);
             self.value = Some(initialize_json(soundpack_config).unwrap());
         }
         pub fn initialize_vol(&mut self, vol: u16) {
@@ -37,7 +45,7 @@ pub mod rustyvibes {
                     callback(event, value.clone(), directory, vol);
                 }
                 None => {
-                    println!("JSON wasn't initialized");
+                     // println!("JSON wasn't initialized");
                 }
             }
         }
@@ -72,10 +80,11 @@ pub mod rustyvibes {
         json_file.initialize(default_args.clone());
         json_file.initialize_vol(default_vol.clone());
 
-        println!("Soundpack configuration loaded");
-        println!("Rustyvibes is running");
+         // println!("Soundpack configuration loaded");
+         // println!("Rustyvibes is running");
 
         let event_handler = move |event: Event| {
+             // println!("Event clicked :{:?}", event);
             match input_rx.try_recv() {
                 Ok(re) => {
                     match re {
@@ -84,6 +93,7 @@ pub mod rustyvibes {
                             default_vol = vol;
                             dbg!("vol changed");
                         }
+                        
                         UserChangeAction::Arguments(arg) => {
                             json_file.initialize(arg.clone());
                             default_args = arg;
@@ -92,7 +102,7 @@ pub mod rustyvibes {
                     };
                 }
                 Err(_err) => {
-                    // println!("Error:{:?}", err);
+                    //  // println!("Error:{:?}", err);
                 }
             }
 
@@ -100,7 +110,7 @@ pub mod rustyvibes {
         };
 
         if let Err(error) = listen(event_handler) {
-            println!("Error: {:?}", error)
+             // println!("Error: {:?}", error)
         }
     }
 
@@ -127,7 +137,7 @@ pub mod rustyvibes {
                     let mut dest = match key_code {
                         Some(code) => json_file["defines"][&code.to_string()].to_string(),
                         None => {
-                            println!("Unmapped key: {:?}", key); // for debugging
+                             // println!("Unmapped key: {:?}", key); // for debugging
                             let default_key = 30; // keycode for 'a'
                             json_file["defines"][&default_key.to_string()].to_string()
                         }
@@ -143,7 +153,7 @@ pub mod rustyvibes {
                     .lock()
                     .expect("Can't open key_depressed set for removal")
                     .remove(&key_code.unwrap_or(0));
-                // println!("In the future, this'll trigger the keyup sound")
+                //  // println!("In the future, this'll trigger the keyup sound")
             }
             _ => (),
         }

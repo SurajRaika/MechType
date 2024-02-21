@@ -45,11 +45,13 @@ fn main() {
                 .path_resolver()
                 .resolve_resource("soundPack/super_paper_mario_v1/")
                 .expect("failed to resolve resource");
+            //  // println!("Resource Path:{:?} \n In String Lossy:{} \n ",resource_path,resource_path.to_string_lossy());
+            // let without_prefix = resource_path.strip_prefix("\\\\?\\C:").unwrap_or(&resource_path);
 
             (tauri::async_runtime::spawn(async move {
                 key_sound_core::rustyvibes::start_rustyvibes(
                     async_proc_input_rx,
-                    String::from(resource_path.to_string_lossy()),
+                    String::from(resource_path.strip_prefix("\\\\?\\C:").unwrap_or(&resource_path).to_string_lossy()),
                 )
                 .await
             }));

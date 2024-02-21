@@ -5,14 +5,25 @@ use serde::{Deserialize, Serialize};
 use tauri::api::dialog::FileDialogBuilder;
 use tauri::api::dir::{is_dir, read_dir};
 
+
+fn remove_prefix(path_str: &str) -> &str {
+    if let Some(stripped) = path_str.strip_prefix(r"\\?\") {
+        stripped
+    } else {
+        // If the prefix is not present, return the original string
+        path_str
+    }
+}
+
 #[tauri::command]
 pub async fn set_track(
     arg: &str,
     state: tauri::State<'_, AsyncProcInputTx>,
 ) -> Result<String, String> {
     let batman = state.inner.lock().await;
+    //  // println!("arg:{}",arg);
     let resss = match batman
-        .send(UserChangeAction::Arguments(arg.to_string()))
+        .send(UserChangeAction::Arguments(remove_prefix(arg).to_string()))
         .await
     {
         Ok(_) => ApiResponse {
