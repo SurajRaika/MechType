@@ -29,6 +29,9 @@ To get started with MechType, download the latest version from the [Releases](ht
 
 - [Download MechType v0.0.1 for macOS](https://github.com/SurajRaika/MechType/releases/download/app-v0.0.1/MechType_0.0.1_x64.dmg) (15.2 MB)
 
+- [Download MechType v0.0.1 for Windows (Setup.exe)](https://github.com/SurajRaika/MechType/releases/download/app-v0.0.1/MechType_0.0.1_x64-setup.exe) (3.94 MB)
+ [Download MechType v0.0.1 for Windows (msi)](https://github.com/SurajRaika/MechType/releases/download/app-v0.0.1/MechType_0.0.1_x64_en-US.msi) (4.44 MB)
+
 - [Download MechType v0.0.1 Source Code (ZIP)](https://github.com/SurajRaika/MechType/archive/refs/tags/app-v0.0.1.zip)
 - [Download MechType v0.0.1 Source Code (TAR.GZ)](https://github.com/SurajRaika/MechType/archive/refs/tags/app-v0.0.1.tar.gz)
 
