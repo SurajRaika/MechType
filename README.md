@@ -35,13 +35,22 @@ To get started with MechType, download the latest version from the [Releases](ht
 - [Download MechType v0.0.1 Source Code (ZIP)](https://github.com/SurajRaika/MechType/archive/refs/tags/app-v0.0.1.zip)
 - [Download MechType v0.0.1 Source Code (TAR.GZ)](https://github.com/SurajRaika/MechType/archive/refs/tags/app-v0.0.1.tar.gz)
 
+**Note:** This app is not signed, so you may receive a warning that it's not commonly downloaded. However, feel free to ignore it as long as you download from here.
+
+![image](https://github.com/SurajRaika/MechType/assets/103476230/bbd3a64a-b5fb-45ab-9cf4-9d30005d001b)
+
+
+
+
+
+
 ## Adding More Soundtracks
 
 Explore additional soundtracks at
 
 Soundpacks: [Here](https://docs.google.com/spreadsheets/d/1PimUN_Qn3CWqfn-93YdVW8OWy8nzpz3w3me41S8S494/edit#gid=0)
-or
- [MechVibes](https://mechvibes.com/sound-packs/) and enrich your typing experience.
+
+🎵🎶 **Note that only soundtracks with WAV files are supported.** 🎵🎶
 
 ## MechVibes
 
