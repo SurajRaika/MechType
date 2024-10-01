@@ -43,18 +43,15 @@ To get started with MechType, download the latest version from the [Releases](ht
 
 
 
-
 ## Adding More Soundtracks
 
-Explore additional soundtracks at
-
-Soundpacks: [Here](https://docs.google.com/spreadsheets/d/1PimUN_Qn3CWqfn-93YdVW8OWy8nzpz3w3me41S8S494/edit#gid=0)
+**Explore additional soundtracks at [Soundpacks](https://docs.google.com/spreadsheets/d/1PimUN_Qn3CWqfn-93YdVW8OWy8nzpz3w3me41S8S494/edit#gid=0)**
 
 🎵🎶 **Note that only soundtracks with WAV files are supported.** 🎵🎶
 
-## MechVibes
+## Alternatives
 
-If you prefer an Electron app, MechVibes was the pioneering application in this space. Explore it at [MechVibes](https://mechvibes.com/).
+If you're looking for a more traditional option, you might come across MechVibes, an Electron app. However, keep in mind that it's heavier and may not offer the same performance benefits as MechType.
 
 ---
 
